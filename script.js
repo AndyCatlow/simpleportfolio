@@ -71,3 +71,16 @@ getCardData();
 // fullscreenDiv.addEventListener("click", () => {
 //   fullscreenDiv.setAttribute("data-fullscreen", "false");
 // });
+
+function copyToClipboard() {
+  const email = "mrcatlow@gmail.com";
+
+  navigator.clipboard.writeText(email);
+
+  /* Alert the copied text */
+  alert("Copied the text: " + email);
+}
+
+document
+  .querySelector("#copy-email-btn")
+  .addEventListener("click", copyToClipboard);
