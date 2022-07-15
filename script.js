@@ -21,7 +21,7 @@ function toggleNav() {
 }
 
 function getCardData() {
-  fetch("data.json")
+  fetch("projectdata.json")
     .then((response) => response.json())
     .then((data) => {
       getCardsHtml(data);
@@ -32,24 +32,43 @@ function getCardsHtml(arr) {
   let cardsHtml = "";
 
   arr.forEach((card) => {
-    let image = viewportWidth > 875 ? card.images.desktop : card.images.mobile;
+    // let image = viewportWidth > 875 ? card.images.desktop : card.images.mobile;
     cardsHtml += `
-    <div class="card" style="background-image: url('${image}');" id=${card.imageSlug}>
-        <h3 class="card--title" >${card.title}</h3>
-    </div>    
+    <div class="card">
+      <img
+        src=${card.thumbnail}
+        alt=""
+        class="card--img"
+        height="150px"
+        width="100px"
+      />
+      <div class="card--text">
+        <h2 class="card--title">
+          ${card.title}
+        </h2>
+        <p class="card--description">
+          ${card.description}
+        </p>
+        <div class="btn--wrapper">
+          <a class="btn btn--info" target="_blank">More Info</a>
+          <a class="btn btn--live" target="_blank">Live Site</a>
+          <a class="btn btn--code" target="_blank">Github</a>
+        </div>
+      </div>
+    </div>   
     `;
   });
   cardsContainer.innerHTML = cardsHtml;
 }
 getCardData();
 
-cardsContainer.addEventListener("click", (e) => {
-  if (e.target.id) {
-    fullscreenDiv.setAttribute("data-fullscreen", "true");
-    fullscreenDiv.style.backgroundImage = `url("./images/desktop/${e.target.id}.jpg")`;
-  }
-});
+// cardsContainer.addEventListener("click", (e) => {
+//   if (e.target.id) {
+//     fullscreenDiv.setAttribute("data-fullscreen", "true");
+//     fullscreenDiv.style.backgroundImage = `url("./images/desktop/${e.target.id}.jpg")`;
+//   }
+// });
 
-fullscreenDiv.addEventListener("click", () => {
-  fullscreenDiv.setAttribute("data-fullscreen", "false");
-});
+// fullscreenDiv.addEventListener("click", () => {
+//   fullscreenDiv.setAttribute("data-fullscreen", "false");
+// });

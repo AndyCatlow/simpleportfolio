@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link
+    <!-- <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
-    />
+    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Raleway:wght@100;300;700&display=swap"
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | Loopstudios landing page</title>
+    <title>Andy Catlow</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./script.js" defer></script>
   </head>
@@ -26,22 +26,22 @@
     <header>
       <nav class="navbar" id="primary-navbar">
         <div class="logo__container img__container">
-          <img src="./images/logo.svg" alt="loop studios logo" />
+          <img src="./images/andywhite.svg" alt="Andy Catlow logo" />
         </div>
         <ul class="nav-list hide-nav" aria-expanded="false">
           <li><a href="#about" class="nav-link primary-nav-link">About</a></li>
           <li>
-            <a href="#careers" class="nav-link primary-nav-link">Careers</a>
+            <a href="#projects" class="nav-link primary-nav-link">Projects</a>
           </li>
           <li>
-            <a href="#events" class="nav-link primary-nav-link">Events</a>
+            <a href="#contact" class="nav-link primary-nav-link">Contact</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#products" class="nav-link primary-nav-link">Products</a>
           </li>
           <li>
             <a href="#support" class="nav-link primary-nav-link">Support</a>
-          </li>
+          </li> -->
         </ul>
         <div class="menu-toggle__container img__container">
           <button class="menu-toggle">
@@ -54,7 +54,10 @@
         </div>
       </nav>
       <div class="header--text__container">
-        <h1 class="header--text">Immersive experiences that deliver</h1>
+        <h1 class="header--text">
+          <span class="text--thin">Andy</span> Catlow
+        </h1>
+        <p class="header--subtitle">Frontend Web Developer</p>
       </div>
     </header>
 
@@ -73,33 +76,56 @@
       </section>
       <section class="creations--section">
         <div class="creations--text__container">
-          <h2 class="creations--title">Our creations</h2>
+          <h2 class="creations--title">Projects</h2>
         </div>
         <div class="cards__container">
           <!-- cards inserted by js -->
+          <!-- <div class="card">
+            <img
+              src="./images/mobile/image-from-above.jpg"
+              alt=""
+              class="card--img"
+              height="150px"
+              width="100px"
+            />
+            <div class="card--text">
+              <h2 class="card--title">Awesome Project</h2>
+              <p class="card--description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                sit, corporis id ea repellendus adipisci, quae repellat quaerat
+                obcaecati alias, reiciendis voluptate rem! Nam voluptatem
+                facilis ad dicta repellendus. Nesciunt?
+              </p>
+              <div class="btn--wrapper">
+                <a class="btn btn--info" target="_blank">More Info</a>
+                <a class="btn btn--live" target="_blank">Live Site</a>
+                <a class="btn btn--code" target="_blank">Github</a>
+              </div>
+            </div>
+          </div> -->
         </div>
-        <a href="#" class="see-all btn">See all</a>
+        <!-- <a href="#" class="see-all btn">See all</a> -->
         <div class="fullscreen" data-fullscreen="false"></div>
       </section>
     </main>
     <footer>
       <div class="footer--left">
         <div class="logo__container img__container">
-          <img src="./images/logo.svg" alt="loop studios logo" />
+          <img src="./images/andywhite.svg" alt="Andy Catlow logo" />
         </div>
         <nav class="footer-nav" id="footer-nav">
           <ul class="footer-nav-list">
             <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#careers" class="nav-link">Careers</a></li>
-            <li><a href="#events" class="nav-link">Events</a></li>
-            <li><a href="#products" class="nav-link">Products</a></li>
-            <li><a href="#support" class="nav-link">Support</a></li>
+            <li><a href="#Projects" class="nav-link">Projects</a></li>
+            <li><a href="#Contact" class="nav-link">Contact</a></li>
+            <!-- <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#support" class="nav-link">Support</a></li> -->
           </ul>
         </nav>
       </div>
       <div class="footer--right">
         <div class="social-icons">
-          <div class="social-icon__container img__container">
+          <!-- <div class="social-icon__container img__container">
             <a href="https://facebook.com" class="social-link" target="_blank"
               ><img
                 src="./images/icon-facebook.svg"
@@ -107,9 +133,12 @@
                 class="social-icon"
               />
             </a>
-          </div>
+          </div> -->
           <div class="social-icon__container img__container">
-            <a href="https://twitter.com" class="social-link" target="_blank"
+            <a
+              href="https://twitter.com/catlowandy"
+              class="social-link"
+              target="_blank"
               ><img
                 src="./images/icon-twitter.svg"
                 alt="twitter"
@@ -118,9 +147,9 @@
             </a>
           </div>
           <div class="social-icon__container img__container">
-            <a href="https://pinterest.com" class="social-link" target="_blank"
+            <a href="https://linkedin.com" class="social-link" target="_blank"
               ><img
-                src="./images/icon-pinterest.svg"
+                src="./images/icon-linkedin-bw.svg"
                 alt="pinterest"
                 class="social-icon"
               />
@@ -136,7 +165,7 @@
             </a>
           </div>
         </div>
-        <div class="copyright">© 2021 Loopstudios. All rights reserved.</div>
+        <div class="copyright">© 2022 Andy Catlow. All rights reserved.</div>
       </div>
     </footer>
 

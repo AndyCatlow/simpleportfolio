@@ -17,16 +17,34 @@ svg {
 }
 
 /* ------------- */
+/*  colors       */
+/* ------------- */
+
+html {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-very-light-gray: hsl(200, 13%, 95%);
+  --clr-light-gray: hsl(200, 3%, 81%);
+  --clr-dark-gray: hsl(0, 0%, 55%);
+  --clr-very-dark-gray: hsl(0, 0%, 41%);
+  --clr-dark-blue: hsl(218, 100%, 5%);
+}
+
+/* ------------- */
 /*  typography   */
 /* ------------- */
 
 body {
   --ff-alata: "Alata", sans-serif;
-  --ff-josefin: "Josefin Sans", sans-serif;
+  --ff-josefin: "Raleway", sans-serif;
+  --fw-thin: 100;
   --fw-light: 300;
   --fw-bold: 400;
+  --fw-extra-bold: 700;
   font-size: 15px;
   font-family: var(--ff-alata);
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-light-gray);
 }
 
 h1,
@@ -41,15 +59,8 @@ h2 {
   font-size: 2rem;
 }
 
-/* ------------- */
-/*  colors       */
-/* ------------- */
-
-html {
-  --clr-white: hsl(0, 0%, 100%);
-  --clr-black: hsl(0, 0%, 0%);
-  --clr-dark-gray: hsl(0, 0%, 55%);
-  --clr-very-dark-gray: hsl(0, 0%, 41%);
+.text--thin {
+  font-weight: var(--fw-thin);
 }
 
 /* ------------- */
@@ -108,6 +119,8 @@ a:active::after {
   justify-content: space-between;
   isolation: isolate;
   z-index: 3;
+  /* position: fixed;
+  width: 100vw; */
 }
 
 .menu-toggle__container {
@@ -157,10 +170,12 @@ a:active::after {
 /* ------------- */
 header {
   min-height: 100vh;
-  background-image: url("./images/mobile/image-hero.jpg");
+  background-image: url("./images/mobile/codingbg-small.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
 }
 
 .header--text__container {
@@ -172,6 +187,17 @@ header {
   line-height: 1;
   /* max-width: 60vw; */
   width: min(90vw, 500px);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header--text__container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+
+  z-index: -1;
 }
 
 .header--text {
@@ -194,9 +220,9 @@ main {
   margin-top: 15vh;
   max-width: 90vw;
   height: 60vw;
-  background-image: url("./images/mobile/image-interactive.jpg");
+  background-image: url("./images/profile-pic-sq.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -212,7 +238,7 @@ main {
 
 .intro--text {
   margin: 1em auto;
-  color: var(--clr-very-dark-gray);
+  /* color: var(--clr-very-dark-gray); */
   line-height: 1.6;
 }
 
@@ -235,7 +261,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1.5em;
+  gap: 3em;
   margin-top: 3em;
   margin-bottom: 3em;
 }
@@ -243,53 +269,45 @@ main {
 .card {
   width: 90vw;
   max-width: 300px;
-  aspect-ratio: 3 / 1.1;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 5px 5px 3px rgba(128, 129, 130, 0.05);
 }
 
-.card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgb(0, 0, 0, 0.4);
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.5) 11%,
-    rgba(0, 0, 0, 0) 100%
-  );
+.card--text {
+  padding: 2em;
 }
 
 .card--title {
   color: var(--clr-white);
   font-size: 1.5rem;
   line-height: 1;
-  width: 9ch;
-  height: min-content;
-  text-align: left;
-  position: absolute;
-  bottom: 0.8em;
-  left: 0.8em;
-  z-index: 3;
-  pointer-events: none;
 }
 
-.see-all.btn {
+.card--description {
+  margin-block: 1em;
+}
+
+.btn--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.btn {
   text-transform: uppercase;
   letter-spacing: 4px;
   padding: 0.5em 2em;
   border: 1px solid var(--clr-black);
-  background-color: var(--clr-white);
+  background-color: var(--clr-very-light-gray);
+  color: var(--clr-black);
   transition: background-color 250ms ease-in-out 200ms,
     color 250ms ease-in-out 200ms;
 }
 
-.see-all.btn:hover,
-.see-all.btn:focus,
-.see-all.btn:active {
+.btn:hover,
+.btn:focus,
+.btn:active {
   color: var(--clr-white);
   background-color: var(--clr-black);
 }
@@ -378,7 +396,7 @@ footer {
 /* ------------------------------------------------------------------ */
 /* desktop adjustments                                                */
 /* ------------------------------------------------------------------ */
-@media screen and (min-width: 875px) {
+@media screen and (min-width: 700px) {
   /* ------------- */
   /*  typography   */
   /* ------------- */
@@ -438,9 +456,7 @@ footer {
   /* ------------- */
 
   header {
-    background-image: url("./images/desktop/image-hero.jpg");
-    position: relative;
-    z-index: 0;
+    background-image: url("./images/desktop/codingbg-med.jpg");
   }
 
   .header--text__container {
@@ -452,17 +468,14 @@ footer {
     padding-inline: 1em 2em;
     z-index: 10;
   }
-  .header--text__container::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
 
   /* ------------- */
   /* sections      */
   /* ------------- */
+
+  section {
+    margin-block: 4em;
+  }
 
   /* ------------- */
   /* intro         */
@@ -471,9 +484,9 @@ footer {
   .intro--section {
     display: grid;
     height: 100vh;
+    max-width: 100vw;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    padding-block: 8rem;
+    grid-template-rows: repeat(16, 1fr);
   }
 
   .intro--img__container {
@@ -482,21 +495,24 @@ footer {
     height: auto;
     grid-column: 1 / 11;
     grid-row: 1 / 12;
-    background-image: url("./images/desktop/image-interactive.jpg");
   }
 
   .intro--text__container {
-    grid-column: 9 / 17;
-    grid-row: 5 / 13;
+    grid-column: 6 / 17;
+    grid-row: 6 / -1;
     background: var(--clr-white);
-    padding: 4em 0 0 5em;
+    color: var(--clr-very-dark-gray);
+    padding: 4em;
     text-align: left;
+
+    height: min-content;
   }
 
   .intro--title {
     margin-top: 0;
     font-size: 2.5rem;
     margin-bottom: 0.5em;
+    color: var(--clr-black);
   }
 
   .intro--text {
@@ -516,7 +532,7 @@ footer {
     text-align: left;
   }
 
-  .card {
+  /* .card {
     width: calc(25% - 1.5em);
     height: 400px;
   }
@@ -525,7 +541,7 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-  }
+  } */
 
   /* ------------- */
   /* footer        */
