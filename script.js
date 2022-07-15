@@ -50,9 +50,8 @@ function getCardsHtml(arr) {
           ${card.description}
         </p>
         <div class="btn--wrapper">
-          <a class="btn btn--info" target="_blank">More Info</a>
-          <a class="btn btn--live" target="_blank">Live Site</a>
-          <a class="btn btn--code" target="_blank">Github</a>
+          <a class="btn btn--live" target="_blank" href=${card.url}>Live Site</a>
+          <a class="btn btn--code" target="_blank" href=${card.code}>Github</a>
         </div>
       </div>
     </div>   

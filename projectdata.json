@@ -1,6 +1,34 @@
 [
   {
+    "title": "Music Player",
+    "tech": "React Sass",
+    "description": "Built using React and Sass. A responsive music player that highlights the tune playing in the library and changes images for each tune. This was completed as part of The Creative React and Redux Course by DevEd",
+    "thumbnail": "./images/musicplayer.jpg",
+    "moreinfo": "more info page link",
+    "url": "https://reactmusicapp-ac.netlify.app/",
+    "code": "https://github.com/AndyCatlow/react-music-player"
+  },
+  {
+    "title": "Cross Connect",
+    "tech": "JS HTML CSS",
+    "description": "Built using vanilla JS, HTML and CSS to keep data requirements smaller. I designed and built this site with close consultation with the client. I am continuing to advise them on improving their copy and developing service targetted landing pages.",
+    "thumbnail": "./images/crossconnect.jpg",
+    "moreinfo": "more info page link",
+    "url": "https://www.cross-connect.co.za/",
+    "code": "https://github.com/AndyCatlow/CrossConnectTech"
+  },
+  {
+    "title": "Artists Portfolio",
+    "tech": "JS HTML CSS",
+    "description": "My first ever website was this portfolio site to allow my father to show off his amazing art work. It features a responsive design, full screen image enlargements and utilises Netlify form control.",
+    "thumbnail": "./images/davidcatlow.jpg",
+    "moreinfo": "more info page link",
+    "url": "https://www.davidcatlow.art",
+    "code": "https://github.com/AndyCatlow/davidcatlowart"
+  },
+  {
     "title": "Awesome Project",
+    "tech": "JS HTML CSS",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
     "thumbnail": "./images/mobile/image-from-above.jpg",
     "moreinfo": "more info page link",
@@ -9,6 +37,7 @@
   },
   {
     "title": "Awesome Project",
+    "tech": "JS HTML CSS",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
     "thumbnail": "./images/mobile/image-from-above.jpg",
     "moreinfo": "more info page link",
@@ -17,6 +46,7 @@
   },
   {
     "title": "Awesome Project",
+    "tech": "JS HTML CSS",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
     "thumbnail": "./images/mobile/image-from-above.jpg",
     "moreinfo": "more info page link",
@@ -25,6 +55,7 @@
   },
   {
     "title": "Awesome Project",
+    "tech": "JS HTML CSS",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
     "thumbnail": "./images/mobile/image-from-above.jpg",
     "moreinfo": "more info page link",
@@ -33,6 +64,7 @@
   },
   {
     "title": "Awesome Project",
+    "tech": "JS HTML CSS",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
     "thumbnail": "./images/mobile/image-from-above.jpg",
     "moreinfo": "more info page link",
@@ -41,30 +73,7 @@
   },
   {
     "title": "Awesome Project",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
-    "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
-  },
-  {
-    "title": "Awesome Project",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
-    "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
-  },
-  {
-    "title": "Awesome Project",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
-    "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
-  },
-  {
-    "title": "Awesome Project",
+    "tech": "JS HTML CSS",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
     "thumbnail": "./images/mobile/image-from-above.jpg",
     "moreinfo": "more info page link",
