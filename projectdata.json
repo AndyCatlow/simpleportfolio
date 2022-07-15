@@ -27,57 +27,39 @@
     "code": "https://github.com/AndyCatlow/davidcatlowart"
   },
   {
-    "title": "Awesome Project",
+    "title": "Loop Studio Landing Page",
     "tech": "JS HTML CSS",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
+    "description": "A responsive landing page for a VR studio. Built from a design supplied by Frontend Mentor.",
+    "thumbnail": "./images/loopstudio.jpg",
     "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
+    "url": "https://loopstudio-ac.netlify.app",
+    "code": "https://github.com/AndyCatlow/FEMLoopStudio"
   },
   {
-    "title": "Awesome Project",
+    "title": "EasyBank Landing Page",
     "tech": "JS HTML CSS",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
+    "description": "A responsive landing page for a digital bank. Built from a design supplied by Frontend Mentor.",
+    "thumbnail": "./images/easybank.jpg",
     "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
+    "url": "https://easybanklandingfem.netlify.app",
+    "code": "https://github.com/AndyCatlow/FEMeasybank"
   },
   {
-    "title": "Awesome Project",
+    "title": "Sunnyside Agency Landing Page",
     "tech": "JS HTML CSS",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
+    "description": "A responsive landing page for a creative agency. Built from a design supplied by Frontend Mentor.",
+    "thumbnail": "./images/sunnyside.jpg",
     "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
+    "url": "https://sunnysideagencyfem.netlify.app",
+    "code": "https://github.com/AndyCatlow/FEMSunnySideAgency"
   },
   {
-    "title": "Awesome Project",
+    "title": "Deadline Sorter",
     "tech": "JS HTML CSS",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
+    "description": "A 'no distraction, no nonsense' app built at the request of my wife, a primary school teacher, as she was struggling to keep track of all her deadlines. Deadlines can be added, marked completed, removed and sorted by due date.",
+    "thumbnail": "./images/deadlinesorter.jpg",
     "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
-  },
-  {
-    "title": "Awesome Project",
-    "tech": "JS HTML CSS",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
-    "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
-  },
-  {
-    "title": "Awesome Project",
-    "tech": "JS HTML CSS",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modisit, corporis id ea repellendus adipisci, quae repellat quaerat obcaecati alias, reiciendis voluptate rem! Nam voluptatem facilis ad dicta repellendus. Nesciunt?",
-    "thumbnail": "./images/mobile/image-from-above.jpg",
-    "moreinfo": "more info page link",
-    "url": "live site link",
-    "code": "github link"
+    "url": "https://deadlinesorter.netlify.app/",
+    "code": "https://github.com/AndyCatlow/workprioritylist"
   }
 ]

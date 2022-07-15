@@ -39,7 +39,7 @@ function getCardsHtml(arr) {
         src=${card.thumbnail}
         alt=""
         class="card--img"
-        height="150px"
+        
         width="100px"
       />
       <div class="card--text">
