@@ -218,12 +218,14 @@ main {
 
 .intro--img__container {
   margin-top: 15vh;
-  max-width: 90vw;
+  margin-inline: auto;
+  width: min(50vw, 400px);
   height: 60vw;
   background-image: url("./images/profile-pic-sq.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  /* clip-path: polygon(70% 0, 100% 30%, 100% 100%, 30% 100%, 0 70%, 0 0); */
 }
 
 .intro--text__container {
@@ -268,10 +270,11 @@ main {
 
 .card {
   width: 90vw;
+  /* min-width: min-content; */
   max-width: 300px;
   display: flex;
   flex-direction: column;
-  box-shadow: 3px 5px 5px 3px rgba(128, 129, 130, 0.08);
+  box-shadow: 3px 5px 5px 3px rgba(128, 129, 130, 0.05);
 }
 
 .card--text {
@@ -397,7 +400,7 @@ footer {
 /* ------------------------------------------------------------------ */
 /* desktop adjustments                                                */
 /* ------------------------------------------------------------------ */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
   /* ------------- */
   /*  typography   */
   /* ------------- */
@@ -484,7 +487,7 @@ footer {
 
   .intro--section {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100vw;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -492,6 +495,7 @@ footer {
 
   .intro--img__container {
     margin-top: 0;
+    margin-inline: initial;
     width: auto;
     height: auto;
     grid-column: 1 / 6;
@@ -520,24 +524,19 @@ footer {
   /* creations     */
   /* ------------- */
 
-  .creations--section {
-    position: relative;
-  }
-
   .creations--title {
     text-align: left;
   }
 
   /* .card {
-    width: calc(25% - 1.5em);
-    height: 400px;
-  }
-
-  .see-all {
-    position: absolute;
-    top: 0;
-    right: 0;
+    min-width: 300px;
+    max-width: 400px;
   } */
+
+  .btn {
+    width: fit-content;
+    margin-inline: auto;
+  }
 
   /* ------------- */
   /* footer        */

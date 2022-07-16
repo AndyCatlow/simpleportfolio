@@ -11,7 +11,7 @@
   {
     "title": "Artists Portfolio",
     "tech": "JS HTML CSS",
-    "description": "My first ever website was this portfolio site to allow my father to show off his amazing art work. It features a responsive design, full screen image enlargements and utilises Netlify form control.",
+    "description": "I built this portfolio site to allow my father to show off his amazing art work. It features a responsive design, full screen image enlargements and utilises Netlify form control.",
     "thumbnail": "./images/davidcatlow.jpg",
     "moreinfo": "more info page link",
     "url": "https://www.davidcatlow.art",
