@@ -221,7 +221,7 @@ main {
   margin-inline: auto;
   width: min(50vw, 400px);
   height: 60vw;
-  background-image: url("./images/profile-pic-sq.jpg");
+  background-image: url("./images/profilepicblue.jpg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -229,7 +229,7 @@ main {
 }
 
 .intro--text__container {
-  max-width: 50ch;
+  /* max-width: 40ch; */
   margin-inline: auto;
 }
 
@@ -240,6 +240,8 @@ main {
 
 .intro--text {
   margin: 1em auto;
+  max-width: 50ch;
+
   /* color: var(--clr-very-dark-gray); */
   line-height: 1.6;
 }
