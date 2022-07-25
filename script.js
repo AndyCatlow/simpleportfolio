@@ -73,7 +73,7 @@ getCardData();
 // });
 
 function copyToClipboard() {
-  const email = "mrcatlow@gmail.com";
+  const email = "andy@andycatlow.dev";
 
   navigator.clipboard.writeText(email);
 
