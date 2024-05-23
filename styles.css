@@ -170,7 +170,7 @@ a:active::after {
 /* ------------- */
 header {
   min-height: 100vh;
-  background-image: url("./images/mobile/codingbg-small.jpg");
+  /* background-image: url("./images/mobile/codingbg-small.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -461,9 +461,9 @@ footer {
   /* header        */
   /* ------------- */
 
-  header {
+  /* header {
     background-image: url("./images/desktop/codingbg-med.jpg");
-  }
+  } */
 
   .header--text__container {
     width: max-content;

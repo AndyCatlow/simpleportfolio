@@ -1,5 +1,14 @@
 [
   {
+    "title": "Smash It! Calorie Calculator",
+    "tech": "Astro SolidJS HTML CSS",
+    "description": "This serves as a lead magnet and customer tool for a nutritionist. Built using SolidJS for the logic and Astro for the page.",
+    "thumbnail": "./images/smashit.jpg",
+    "moreinfo": "more info page link",
+    "url": "https://smashitcaloriecalculator.netlify.app/",
+    "code": "https://github.com/AndyRDA/smashitv3"
+  },
+  {
     "title": "Cross Connect",
     "tech": "JS HTML CSS",
     "description": "Built using vanilla JS, HTML and CSS to keep data requirements smaller. I designed and built this site with close consultation with the client. I am continuing to advise them on improving their copy and developing service targetted landing pages.",
